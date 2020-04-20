@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#19968;&#12289;Artistic &#33402;&#26415;&#31867; </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#19968;&#12289;Artistic &#33402;&#26415;&#31867; ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>说明：本节点库来自unity官方网站翻译</p>
+<p><a href="https://docs.unity3d.com/Packages/com.unity.shadergraph@7.1/manual/Getting-Started.html">https://docs.unity3d.com/Packages/com.unity.shadergraph@7.1/manual/Getting-Started.html</a></p>
+<h2 id="一artistic-艺术类">一、Artistic 艺术类</h2>
+<h3 id="1adjustment-调整">1.Adjustment 调整</h3>
+<h3 id="2blend-混合">2.Blend 混合</h3>
+<h3 id="3filter-过滤">3.Filter 过滤</h3>
+<h3 id="4mask-遮罩">4.Mask 遮罩</h3>
+<h3 id="5normal-法线">5.Normal 法线</h3>
+<h3 id="6utillity-工具类">6.Utillity 工具类</h3>
+<h2 id="二channel-渠道类">二、Channel 渠道类</h2>
+<h3 id="1combine-组合节点">1.Combine 组合节点</h3>
+<p><strong>描述：</strong></p>
+<p>从四个输入<strong>R</strong>，<strong>G</strong>，<strong>B</strong>和<strong>A</strong>创建新矢量。输出<strong>RGBA</strong>是由输入<strong>R</strong>，<strong>G</strong>，<strong>B</strong>和<strong>A</strong>组成的<strong>四维向量</strong>。输出<strong>RGB</strong>是由输入<strong>R</strong>，<strong>G</strong>和<strong>B</strong>组成的<strong>三维向量</strong>。输出<strong>RG</strong>是由输入<strong>R</strong>和<strong>G</strong>组成的<strong>二维向量</strong>。</p>
+<p><strong>端口：</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name名称</th>
+<th>Direction节点方向</th>
+<th>Type类型</th>
+<th>Binding绑定</th>
+<th>Description描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>R</td>
+<td>Input输入</td>
+<td>Vector1</td>
+<td>None</td>
+<td>输出定义的红色通道</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Input输入</td>
+<td>Vector1</td>
+<td>None</td>
+<td>输出定义的绿色通道</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Input输入</td>
+<td>Vector1</td>
+<td>None</td>
+<td>输出定义的蓝色通道</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Input输入</td>
+<td>Vector1</td>
+<td>None</td>
+<td>输出定义的Alpha通道</td>
+</tr>
+<tr>
+<td>RGBA</td>
+<td>Output输出</td>
+<td>Vector4</td>
+<td>None</td>
+<td>输出四维向量</td>
+</tr>
+<tr>
+<td>RGB</td>
+<td>Output输出</td>
+<td>Vector3</td>
+<td>None</td>
+<td>输出三维向量</td>
+</tr>
+<tr>
+<td>RG</td>
+<td>Output输出</td>
+<td>Vector2</td>
+<td>None</td>
+<td>输出二维向量</td>
+</tr>
+</tbody>
+</table>
+<p><strong>案例代码：</strong></p>
+<p>以下示例代码表示此节点的一种可能结果。</p>
+<pre><code class="lang-c#">void Unity_Combine_float(float R, float G, float B, float A, out float4 RGBA, out float3 RGB, out float2 RG)
+{
+    RGBA = float4(R, G, B, A);
+    RGB = float3(R, G, B);
+    RG = float2(R, G);
+}
+</code></pre>
+<h3 id="2flip--翻转">2.Flip  翻转</h3>
+<h3 id="3split--分离">3.Split  分离</h3>
+<h3 id="4swizzle---四维索类">4.Swizzle   四维索类</h3>
+<h2 id="三input-输入类">三、Input 输入类</h2>
+<h3 id="1basic-基础类型">1.Basic 基础类型</h3>
+<h3 id="2geometry-几何学">2.Geometry 几何学</h3>
+<h3 id="3gradient-梯度">3.Gradient 梯度</h3>
+<h3 id="4matrix-矩阵">4.Matrix 矩阵</h3>
+<h3 id="5pbr">5.PBR</h3>
+<h3 id="6scene-场景">6.Scene 场景</h3>
+<h3 id="7texture-贴图">7.Texture 贴图</h3>
+<h2 id="四master">四、Master</h2>
+<h3 id="1pbr">1.PBR</h3>
+<h3 id="2unlit--不发光的">2.Unlit  不发光的</h3>
+<h2 id="五math-数学类">五、Math 数学类</h2>
+<h3 id="1advanced--高级">1.Advanced  高级</h3>
+<h3 id="2basic-基础">2.Basic 基础</h3>
+<h3 id="3derivative-衍生类">3.Derivative 衍生类</h3>
+<h3 id="4interpolation-插补">4.Interpolation 插补</h3>
+<h3 id="5matrix-矩阵">5.Matrix 矩阵</h3>
+<h3 id="6range-范围">6.Range 范围</h3>
+<h3 id="7round-数字改变">7.Round 数字改变</h3>
+<h3 id="8trigonometry-三角形">8.Trigonometry 三角形</h3>
+<h3 id="9vector-向量">9.Vector 向量</h3>
+<h3 id="10wave-波">10.Wave 波</h3>
+<h2 id="六procedural-程序类">六、Procedural 程序类</h2>
+<h3 id="1noise-噪点">1.Noise 噪点</h3>
+<h4 id="1-gradient-noise梯度噪声">1) Gradient Noise梯度噪声</h4>
+<h4 id="2-simple-noise简单噪声">2) Simple Noise简单噪声</h4>
+<h4 id="3-voronoi-沃罗诺伊">3) Voronoi 沃罗诺伊</h4>
+<p><strong>描述：</strong></p>
+<p>根据输入<strong>UV</strong>生成Voronoi或<a href="https://en.wikipedia.org/wiki/Worley_noise">Worley</a>噪声。Voronoi噪声是通过计算像素与点阵之间的距离生成的。通过将这些点偏移一个伪随机数（由输入<strong>Angle Offset</strong>控制），可以生成一个单元簇。这些单元格的大小以及由此产生的噪声由输入<strong>单元格密度</strong>控制。输出<strong>单元格</strong>包含原始单元格数据。</p>
+<p><strong>端口：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Name名称</th>
+<th style="text-align: left;">Direction节点方向</th>
+<th style="text-align: left;">Type类型</th>
+<th style="text-align: left;">Binding绑定</th>
+<th style="text-align: left;">Description描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">UV</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">Vector 2</td>
+<td style="text-align: left;">UV</td>
+<td style="text-align: left;">Input UV value输入的UV值</td>
+</tr>
+<tr>
+<td style="text-align: left;">Angle Offset</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">Vector 1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Offset value for points点的偏移值</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cell Density</td>
+<td style="text-align: left;">Input</td>
+<td style="text-align: left;">Vector 1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Density of cells generated产生的细胞密度</td>
+</tr>
+<tr>
+<td style="text-align: left;">Out</td>
+<td style="text-align: left;">Output</td>
+<td style="text-align: left;">Vector 1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Output noise value输出的噪点值</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cells</td>
+<td style="text-align: left;">Output</td>
+<td style="text-align: left;">Vector 1</td>
+<td style="text-align: left;">None</td>
+<td style="text-align: left;">Raw cell data原始细胞数据</td>
+</tr>
+</tbody>
+</table>
+<p><strong>案例代码：</strong></p>
+<pre><code class="lang-c#">inline float2 unity_voronoi_noise_randomVector (float2 UV, float offset)
+{
+    float2x2 m = float2x2(15.27, 47.63, 99.41, 89.98);
+    UV = frac(sin(mul(UV, m)) * 46839.32);
+    return float2(sin(UV.y*+offset)*0.5+0.5, cos(UV.x*offset)*0.5+0.5);
+}
+
+void Unity_Voronoi_float(float2 UV, float AngleOffset, float CellDensity, out float Out, out float Cells)
+{
+    float2 g = floor(UV * CellDensity);
+    float2 f = frac(UV * CellDensity);
+    float t = 8.0;
+    float3 res = float3(8.0, 0.0, 0.0);
+
+    for(int y=-1; y&lt;=1; y++)
+    {
+        for(int x=-1; x&lt;=1; x++)
+        {
+            float2 lattice = float2(x,y);
+            float2 offset = unity_voronoi_noise_randomVector(lattice + g, AngleOffset);
+            float d = distance(lattice + offset, f);
+            if(d &lt; res.x)
+            {
+                res = float3(d, offset.x, offset.y);
+                Out = res.x;
+                Cells = res.y;
+            }
+        }
+    }
+}
+</code></pre>
+<h3 id="2shapes-形状">2.Shapes 形状</h3>
+<h3 id="3checkerboard-棋盘">3.Checkerboard 棋盘</h3>
+<h2 id="七utility-工具类">七、Utility 工具类</h2>
+<h3 id="1logic-逻辑">1.Logic 逻辑</h3>
+<h3 id="2custom-function-自定义功能">2.Custom Function 自定义功能</h3>
+<h3 id="3keyword-关键字">3.Keyword 关键字</h3>
+<h3 id="4preview-预览">4.Preview 预览</h3>
+<h3 id="5sub-graph-子图">5.Sub Graph 子图</h3>
+<h2 id="八uv">八、UV</h2>
+<h3 id="1flipbook--活页薄">1.Flipbook  活页薄</h3>
+<h3 id="2polar-coordinates-极坐标">2.Polar Coordinates 极坐标</h3>
+<h3 id="3radial-shear-径向剪">3.Radial Shear 径向剪</h3>
+<h3 id="4rotate-旋转">4.Rotate 旋转</h3>
+<h3 id="5spherize-球形化">5.Spherize 球形化</h3>
+<h3 id="6tiling-and-offset-平铺与偏移">6.Tiling And Offset 平铺与偏移</h3>
+<h3 id="7triplanar">7.Triplanar</h3>
+<h3 id="8twirl">8.Twirl</h3>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
